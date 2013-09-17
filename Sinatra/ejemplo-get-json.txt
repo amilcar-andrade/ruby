@@ -1,0 +1,11 @@
+irb
+
+require 'rest_client'
+require 'json'
+
+j = RestClient.get('...') # j is a json string
+
+r = JSON.parse(j) # r is a ruby hash
+
+r["name"] # read/access attribute "name" from ruby hash
+
